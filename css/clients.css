@@ -1,0 +1,348 @@
+/* Clients Page Specific Styles */
+
+.clients-content {
+    padding: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.search-bar svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 0.9375rem;
+    width: 100%;
+}
+
+/* Clients Grid */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.client-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.client-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.client-card-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.client-card-info {
+    flex: 1;
+}
+
+.client-card-name {
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.client-card-company {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.client-card-body {
+    padding: 1.25rem 1.5rem;
+}
+
+.client-info-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.875rem;
+}
+
+.client-info-row:last-child {
+    margin-bottom: 0;
+}
+
+.client-info-row svg {
+    width: 18px;
+    height: 18px;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.client-info-text {
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+
+.client-info-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.client-info-text a:hover {
+    text-decoration: underline;
+}
+
+.client-card-stats {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+}
+
+.client-stat {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    border-right: 1px solid var(--border-color);
+}
+
+.client-stat:last-child {
+    border-right: none;
+}
+
+.client-stat-value {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+}
+
+.client-stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+.client-card-actions {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+}
+
+.client-action-btn {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    background: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    border-right: 1px solid var(--border-color);
+}
+
+.client-action-btn:last-child {
+    border-right: none;
+}
+
+.client-action-btn:hover {
+    background: var(--bg-light);
+    color: var(--primary-color);
+}
+
+.client-action-btn.delete:hover {
+    color: var(--error-color);
+}
+
+.client-action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Modal Overrides */
+.modal-lg {
+    max-width: 600px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Client Details Modal */
+.client-details-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.client-details-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.client-details-main h2 {
+    margin: 0 0 0.25rem;
+    font-size: 1.5rem;
+}
+
+.client-details-main p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.client-details-section {
+    margin-bottom: 1.5rem;
+}
+
+.client-details-section h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.75rem;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.detail-label {
+    width: 120px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.detail-value {
+    font-size: 0.875rem;
+    color: var(--text-dark);
+}
+
+.detail-value a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.invoices-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.summary-item {
+    text-align: center;
+}
+
+.summary-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.summary-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .clients-content {
+        padding: 1rem;
+    }
+    
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-bar {
+        max-width: 100%;
+    }
+    
+    .invoices-summary {
+        grid-template-columns: 1fr;
+    }
+}
